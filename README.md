@@ -16,6 +16,7 @@ To run the project, you need to install the required packages. You can install t
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -23,7 +24,7 @@ To use the model, you can run the sms_classifier.py script. It will load the tra
 
 ```bash
 python sms_classifier.py -m spam_model.pkl -t "Your SMS here"
-
+```
 ## Model
 
 The model used for classification is a Naive Bayes classifier from Scikit-learn.
