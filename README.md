@@ -18,9 +18,6 @@ To run the project, you need to install the required packages. You can install t
 pip install -r requirements.txt
 ```
 
-## Usage
-
-To use the model, you can run the sms_classifier.py script. It will load the trained model and classify a given SMS as spam or not.
 
 ```bash
 python sms_classifier.py -m spam_model.pkl -t "Your SMS here"
