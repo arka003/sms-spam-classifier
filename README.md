@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 
 ```bash
-python sms_classifier.py -m spam_model.pkl -t "Your SMS here"
+streamlit run ./app.py
 ```
 ## Model
 
