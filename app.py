@@ -1,8 +1,18 @@
 import streamlit as st
 import pickle
 import string
-from nltk.corpus import stopwords
 import nltk
+# Set the download directory for NLTK data
+nltk_data_dir = '/opt/render/nltk_data'
+nltk.data.path.append(nltk_data_dir)
+
+# Download necessary NLTK packages
+nltk.download('punkt', download_dir=nltk_data_dir)
+nltk.download('stopwords', download_dir=nltk_data_dir)
+nltk.download('averaged_perceptron_tagger', download_dir=nltk_data_dir)
+nltk.download('wordnet', download_dir=nltk_data_dir)
+nltk.download('omw-1.4', download_dir=nltk_data_dir)
+from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import os
 
